@@ -15,7 +15,7 @@
 
 ## Project Goals
 * Create a React app using the code from my current portfolio.
-  * Begin by mostly copying code into correct places in React app. So that page looks the same as regular version of portolio.
+  * Begin by mostly copying code into correct places in React app. The page should look the same as regular version of portolio.
   * Take advantage of React features to eliminate code repetition and make site more easily maintainable.
 * Original project (non-React version) goals:
   * Design my own unique portfolio page
@@ -42,7 +42,7 @@
 
 ## Instructions for Use
 #### Building the App
-You may copy the code for this page from the [repostitory](https://github.com/djknit/djknit.github.io) and use it as a template for your own portfolio. If you choose to redistribute the code, you must do so in accordance with the license and the license must be included with any redistribution.
+You may copy the code for this page from the [repostitory](https://github.com/djknit/React-Portfolio) and use it as a template for your own portfolio. If you choose to redistribute the code, you must do so in accordance with the license and the license must be included with any redistribution.
 
 ## Developer
 This project is developed and maintained by David Knittel. Any and all questions, comments, suggestions, or proposed contributions are welcome.

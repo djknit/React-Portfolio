@@ -22,7 +22,15 @@ const technologies = {
   veeValidate: new Technology('VeeValidate', 'https://baianat.github.io/vee-validate/'),
   vueCroppa: new Technology('Vue Croppa', 'https://zhanziyang.github.io/vue-croppa/#/'),
   meetupApi: new Technology('Meetup API', 'https://www.meetup.com/meetup_api/'),
-  linkPreviewApi: new Technology('LinkPreview API', 'https://www.linkpreview.net/')
+  linkPreviewApi: new Technology('LinkPreview API', 'https://www.linkpreview.net/'),
+  googleBooksApi: new Technology('Google Books API', 'https://developers.google.com/books/'),
+  jQuery: new Technology('jQuery', 'https://jquery.com/'),
+  mySql: new Technology('MySQL', 'https://dev.mysql.com/doc/refman/8.0/en/introduction.html'),
+  sequelize: new Technology('Sequelize'),
+  handlebars: new Technology('Handlebars', 'https://handlebarsjs.com/'),
+  cheerio: new Technology('Cheerio'),
+  request: new Technology('Request', 'https://www.npmjs.com/package/request'),
+  dotenv: new Technology('Dotenv', 'https://www.npmjs.com/package/dotenv')
 };
 
 export default technologies;
