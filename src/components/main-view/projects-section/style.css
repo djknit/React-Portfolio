@@ -1,0 +1,150 @@
+#projects {
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+#projects-main {
+  background-color: #e0e0e0;
+  margin: 0 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 3px 6px 3px #525252;
+}
+
+#projects h2, #contact h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  color: black;
+  padding: 15px 0 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.project {
+  background-color: #fafafa;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #444444;
+  color: #202020;
+  box-shadow: 2px 4px 2px #525252;
+}
+
+.project > div {
+  border-color: #444444;
+}
+
+.project h3 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #050505;
+}
+
+.project .card-body {
+  text-align: left;
+  border-top: 1px solid #444444;
+}
+
+.card-body:nth-child(2), .card-body:nth-child(3) {
+  border-top: none;
+}
+
+.card-body:nth-child(3) {
+  padding-top: 0;
+}
+
+.project img {
+  width: 100%;
+  border: 1px solid #444444;
+}
+
+.project h6 {
+  text-align: center;
+  color: #101010
+}
+
+.card-body > a {
+  color: #606060;
+}
+
+.card-body > a:hover {
+  color: black;
+}
+
+.card-body .col-6 {
+  text-align: center;
+}
+
+.card-body ul {
+  list-style-type: none;
+  line-height: 1.7;
+  padding-left: calc(50% - 39px);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.card-body .col-6:first-child ul {
+  padding-left: calc(50% - 42px);
+}
+
+.card-body .col-6:first-child ul.apis {
+  padding-left: calc(50% - 47px);
+}
+
+.card-body label {
+  color: #101010;
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+  padding: 0 6px;
+  font-size: 1.05em;
+}
+
+ul li {
+  padding-left: 6px;
+  padding-right: 2px;
+}
+
+ul a {
+  color: #202020;
+}
+
+ul a:hover {
+  font-weight: 500;
+  color: #202020;
+}
+
+.card-footer {
+  padding: 0;
+}
+
+.card-footer .btn-group {
+  width: 100%;
+}
+
+.btn-group > .btn {
+  border: 2px solid #aaaaaa;
+  border-radius: 0;
+  color: white;
+  padding: 0;
+  flex: 1 1 0;
+  vertical-align: middle;
+  display: flex;
+  box-shadow: 1.5px 3px 1.5px #525252;
+}
+
+.btn-group > .btn:focus {
+  border: 2px solid #6c757d;
+  box-shadow: none;
+}
+
+.btn > span {
+  margin: auto;
+}
+
+.btn-group .btn:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.btn-group .btn:last-child {
+  border-bottom-right-radius: 10px;
+}
