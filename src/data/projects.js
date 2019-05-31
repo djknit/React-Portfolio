@@ -17,9 +17,9 @@ const projects = [
     role: 1,  // the number '1' here signifies that I am the sole developer
     notes: [
       <>
-        Many of the features of this app can used without an account. If you wish to create an account,
-        you can do so with only a username and password. For these reasons, there is no guest account
-        for this app.
+        Many of the features of this app be can used without an account. If you wish to create an
+        account, you can do so with only a username and password. For these reasons, there is no
+        guest account for this app.
       </>
     ],
     image: 'assets/images/book_search.png',
@@ -48,6 +48,7 @@ const projects = [
     links: {
       repo: 'https://github.com/djknit/google-books-search',
       deployed: 'https://daves-book-search.herokuapp.com/',
+      readme: 'assets/documents/book-search.html'
     }
   },
   {
@@ -98,7 +99,8 @@ const projects = [
     },
     links: {
       repo: 'https://github.com/huntertrammell/Dev-Social-Network',
-      deployed: 'https://cerebellum-network.herokuapp.com/guest-login'
+      deployed: 'https://cerebellum-network.herokuapp.com/guest-login',
+      readme: 'assets/documents/cerebellum.html'
     }
   },
   {
@@ -111,7 +113,7 @@ const projects = [
         Transactions, and Upcoming bills. The user will keep the dashboard information up to date by
         manually adding in all of their new expenses.
       </>,
-    role: 1,  // the number '1' here signifies that I am the sole developer
+    role: 1,
     notes: [
       <>
         The "Deployed Page" link below will automatically log you in to the guest account.
@@ -139,6 +141,7 @@ const projects = [
     links: {
       repo: 'https://github.com/djknit/Expense',
       deployed: 'https://quiet-spire-74175.herokuapp.com/guest-login',
+      readme: 'assets/documents/expense.html'
     }
   },
   {
@@ -175,6 +178,7 @@ const projects = [
     links: {
       repo: 'https://github.com/djknit/news-scraper',
       deployed: 'https://daves-news-scraper.herokuapp.com/',
+      readme: 'assets/documents/news-scraper.html'
     }
   },
   {
@@ -205,6 +209,7 @@ const projects = [
     links: {
       repo: 'https://github.com/djknit/burger',
       deployed: 'https://devourdaburger.herokuapp.com/',
+      readme: 'assets/documents/burger.html'
     }
   },
   {
@@ -234,7 +239,8 @@ const projects = [
     },
     links: {
       repo: 'https://github.com/djknit/Friend-Finder/',
-      deployed: 'https://people-matcher.herokuapp.com/'
+      deployed: 'https://people-matcher.herokuapp.com/',
+      readme: 'assets/documents/friend-finder.html'
     }
   },
   {
@@ -260,7 +266,8 @@ const projects = [
     },
     links: {
       repo: 'https://github.com/djknit/liri-node-app',
-      video: 'https://www.youtube.com/watch?v=GGi05Dj_tzY'
+      video: 'https://www.youtube.com/watch?v=GGi05Dj_tzY',
+      readme: 'assets/documents/liri.html'
     }
   },
   {
@@ -283,7 +290,8 @@ const projects = [
     },
     links: {
       repo: 'https://github.com/djknit/Food-Fight',
-      deployed: 'https://djknit.github.io/Food-Fight'
+      deployed: 'https://djknit.github.io/Food-Fight',
+      readme: 'assets/documents/rpg.html'
     }
   }
 ];

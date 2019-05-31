@@ -26,9 +26,9 @@ const technologies = {
   googleBooksApi: new Technology('Google Books API', 'https://developers.google.com/books/'),
   jQuery: new Technology('jQuery', 'https://jquery.com/'),
   mySql: new Technology('MySQL', 'https://dev.mysql.com/doc/refman/8.0/en/introduction.html'),
-  sequelize: new Technology('Sequelize'),
+  sequelize: new Technology('Sequelize', 'http://docs.sequelizejs.com/'),
   handlebars: new Technology('Handlebars', 'https://handlebarsjs.com/'),
-  cheerio: new Technology('Cheerio'),
+  cheerio: new Technology('Cheerio', 'https://github.com/cheeriojs/cheerio#readme'),
   request: new Technology('Request', 'https://www.npmjs.com/package/request'),
   dotenv: new Technology('Dotenv', 'https://www.npmjs.com/package/dotenv')
 };
