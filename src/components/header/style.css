@@ -18,7 +18,7 @@ header hr {
   margin: 0;
 }
 
-nav {
+header nav {
   float: right;
 }
 
@@ -27,25 +27,97 @@ nav a {
   display: inline-block;
   text-align: center;
   padding: 0;
-  margin-top: 15px;
   width: 98.6px;
-  border-right: solid white .2px;
   font-size: 17px;
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-nav a:first-child {
+nav a:hover {
+  font-weight: bold;
+  color: #56208a;
+}
+
+header nav a {
+  margin-top: 15px;
+  border-right: solid white .2px;
+}
+
+header nav a:first-child {
   width: 80.6px;
 }
 
-nav a:last-child {
+header nav a:last-child {
   width: 76.6px;
   text-align: right;
   border: none;
   padding-right: 0;
 }
 
-nav a:hover {
-  font-weight: bold;
-  color: #56208a;
+/* ******************************************************** */
+/* Breakpoints */
+
+/* Small */
+@media screen and (max-width: 767.5px) {
+  header {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  header hr {
+    display: block;
+  }
+
+  header nav {
+    float: none;
+  }
+}
+
+/* Extra Small (a little smaller than Bootstrap's xs) */
+@media screen and (max-width: 551px) {
+  .container {
+    width: 410px;
+  }
+
+  header {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  header hr {
+    display: block;
+  }
+
+  header nav {
+    float: none;
+  }
+}
+
+/* Double Extra Small */
+@media screen and (max-width: 415px) {
+  .container {
+    width: 400px;
+  }
+}
+
+/* SMALLEST (almost) */
+@media screen and (max-width: 380px) {
+  .container {
+    width: 330px;
+    padding: 0;
+  }
+
+  header nav > a:first-child {
+    margin-left: 18px;
+  }
+
+  header nav > a:nth-child(3) {
+    border: none;
+  }
+
+  header nav > a:last-child {
+    text-align: center;
+    border-top: solid white .2px;
+    margin-top: 7.5px;
+    padding-top: 7.5px;
+  }
 }

@@ -1,9 +1,79 @@
+/********************************************************************************/
+/*  Notes about styling in this project:  */
+  /* 
+    * Organization:
+      * The CSS is divided between several stylesheets.
+      * Each stylesheet shares a directory with a JSX file.
+      * Each stylesheet should only contain rules that apply to elements that are
+        represented in the JSX file with which that stylesheet shares a directory.
+      * Within each file, rules are grouped by:
+        1st: All styles except animations and breakpoints
+        2nd: Animations
+        3rd: Breakpoints
+        * Within each group, rules are ordered using the order the elements they apply to
+          appear in the JSX document.
+    * Breakpoints used throughout project:
+      * "Large"
+        * max-width = 1199 px
+      * "Medium"
+        * max-width =  991 px
+      * "Small"
+        * max-width =  767.5 px
+      * "Extra Small"
+        * A little smaller than Bootstraps "xs" which is 575px
+        * max-width =  551 px
+      * "Double Extra Small"
+        * max-width =  415 px
+      * "Smallest"
+        * max-width =  380 px;
+  */
+/********************************************************************************/
+
 #root {
   padding: 0;
   margin: 0;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 a, a:hover {
   text-decoration: none;
+}
+
+/* -------------------------------------------------------------- */
+/* Breakpoints */
+
+/* Extra Small (a little smaller than Bootstrap's xs) */
+@media screen and (max-width: 551px) {
+  .container {
+    width: 410px;
+  }
+
+  body {
+    min-width: 410px;
+  }
+}
+
+/* Double Extra Small */
+@media screen and (max-width: 415px) {
+  .container {
+    width: 400px;
+  }
+
+  body {
+    min-width: 400px;
+  }
+}
+
+/* Smallest (of main breakpoints; individual sections may need special
+  breakpoints; currently about section is the only one) */
+@media screen and (max-width: 380px) {
+  .container {
+    width: 330px;
+    padding: 0;
+  }
+
+  body {
+    min-width: 330px;
+  }
 }

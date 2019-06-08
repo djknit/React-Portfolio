@@ -12,14 +12,7 @@ function App() {
       <>
         <Header />
         <Switch>
-          <Route
-            path="readmes/:projectName"
-            render={
-              props => <ReadmeView
-                {...props}
-              />
-            }
-          />
+          {/* A Readme route will be created in the future. For now I am using regular html documents */}
           <Route
             render={
               props => <MainView

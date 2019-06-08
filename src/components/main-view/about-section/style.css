@@ -34,7 +34,7 @@
 }
 
 #about-basic {
-  /* height: 252px; */
+  height: 252px;
   width: 90%;
   margin-left: 5%;
   background-color: #efefef;
@@ -60,7 +60,7 @@ p.about {
   color: #202020;
 }
 
-span.placeholder {
+p.about > span.placeholder {
   padding-left: calc(164px - 5px/3 - 50%/9);
 }
 
@@ -82,4 +82,231 @@ span.placeholder {
 
 #toggle-about-basic:focus {
   outline: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Animations */
+
+/* open/close about section */
+@keyframes open {
+  from { height: 252px; }
+  to { height: 360px; }
+}
+
+@keyframes close {
+  from { height: 360px; }
+  to { height: 252px; }
+}
+
+/* Flip arrow animation for about open/close button */
+/* -- Source: https://stackoverflow.com/questions/5406368/can-you-use-css-to-mirror-flip-text (user: Duopixel) */
+@keyframes flip-up {
+  from {
+      -moz-transform: scale(1, 1);
+      -webkit-transform: scale(1, 1);
+      -o-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1);
+  }
+  to {
+      -moz-transform: scale(1, -1);
+      -webkit-transform: scale(1, -1);
+      -o-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+      transform: scale(1, -1);        
+  }
+}
+
+@keyframes flip-down {
+  from {
+      -moz-transform: scale(1, -1);
+      -webkit-transform: scale(1, -1);
+      -o-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+      transform: scale(1, -1);   
+  }
+  to {
+      -moz-transform: scale(1, 1);
+      -webkit-transform: scale(1, 1);
+      -o-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1);
+  }
+}
+
+/* Fade in/out animation (for text on open/close button) */
+@keyframes fade-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;      
+  }
+}
+
+@keyframes fade-out {
+  from {
+      opacity: 1;  
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Breakpoints */
+
+/* Large */
+@media screen and (max-width: 1199px) {
+  #about-basic {
+      height: 296px;
+  }
+
+  @keyframes open {
+      from { height: 296px; }
+      to { height: 435px; }
+  }
+
+  @keyframes close {
+      from { height: 435px; }
+      to { height: 296px; }
+  }
+}
+
+/* Medium */
+@media screen and (max-width: 991px) {
+  p.about > span.placeholder {
+      display: none;
+  }
+
+  #about-basic {
+      height: 365px;
+  }
+
+  @keyframes open {
+      from { height: 365px; }
+      to { height: 554px; }
+  }
+
+  @keyframes close {
+      from { height: 554px; }
+      to { height: 365px; }
+  }
+}
+
+/* Small */
+@media screen and (max-width: 767.5px) {
+  #profile-pic {
+    top: 0;
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+  }
+
+  #about {
+    padding-top: 5px;
+  }
+
+  #about-basic {
+    height: 464px;
+  }
+
+  @keyframes open {
+      from { height: 464px; }
+      to { height: 720px; }
+  }
+
+  @keyframes close {
+      from { height: 720px; }
+      to { height: 464px; }
+  }
+}
+
+/* Extra Small (a little smaller than Bootstrap "xs") */
+@media screen and (max-width: 551px) {
+  #profile-pic {
+      position: static;
+      float: left;
+      border-bottom-left-radius: 0;
+      margin-right: 15px;
+  }
+
+  #main-heading {
+      padding-left: 5px;
+  }
+
+  #about {
+      padding-top: 5px;
+  }
+
+  #about-basic {
+      height: 630px;
+  }
+
+  @keyframes open {
+      from { height: 630px; }
+      to { height: 962px; }
+  }
+
+  @keyframes close {
+      from { height: 962px; }
+      to { height: 630px; }
+  }
+}
+
+/* Double Extra Small */
+@media screen and (max-width: 415px) {
+  @keyframes open {
+      from { height: 630px; }
+      to { height: 979px; }
+  }
+
+  @keyframes close {
+      from { height: 979px; }
+      to { height: 630px; }
+  }
+}
+
+/* Smallest (of main breakpoints) */
+@media screen and (max-width: 380px) {
+  h1#main-heading {
+      margin-top: 30px;
+  }
+
+  h1#main-heading > span {
+      display: inline-block;
+      max-width: 115px;
+      margin-bottom: 50px;
+  }
+
+  #about-basic {
+      height: 726px;
+  }
+
+  @keyframes open {
+      from { height: 726px; }
+      to { height: 1103px; }
+  }
+
+  @keyframes close {
+      from { height: 1103px; }
+      to { height: 726px; }
+  }
+}
+
+/* Special breakpoint for About section.
+  (prevents scroll bar from covering section header on super small screen)
+*/
+@media screen and (max-width: 348px) {
+  #about-header {
+      width: calc(100% - 10px);
+  }
+  
+  #about-basic {
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
